@@ -148,6 +148,7 @@ const Homepage = () => {
 
   return (
     <div className="centered-container">
+        <h1 className="title">Sorting Jumble</h1>
       <div className="button-row">
         <button onClick={refresh} className="button-style puzzle">
             <span role="img" aria-label="puzzle">🧩</span> Next Puzzle
@@ -214,6 +215,9 @@ const Homepage = () => {
         Check Answer
         </button>
       </div>
+      <footer className="footer">
+        Made by <a href="https://github.com/PallonCX" target="_blank" rel="noopener noreferrer">Pallon</a>
+        </footer>
     </div>
   );
 };

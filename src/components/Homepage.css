@@ -3,11 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; /* Change height to min-height */
   }
   
   .table-container {
     margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
   }
   
   .styled-table {
@@ -33,7 +34,7 @@
   .styled-table tr:hover {
     background-color: #ddd;
   }
-
+  
   .empty-column {
     visibility: hidden;
     width: 10%;
@@ -44,7 +45,7 @@
     visibility: hidden;
     background-color: transparent; /* Maintain width while hidden */
   }
-
+  
   .algorithm-select {
     padding: 8px 12px;
     font-size: 14px;
@@ -64,7 +65,7 @@
   .algorithm-select:focus {
     border-color: #007bff;
   }
-
+  
   .button-row {
     display: flex;
     justify-content: center;
@@ -74,7 +75,7 @@
   .button-row button {
     margin: 0 10px;
   }
-
+  
   .button-style {
     font-size: 16px;
     padding: 10px 20px;
@@ -84,55 +85,28 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
-
-  .puzzle {
-    background-color: #007bff;
-  }
   
-  .puzzle:hover {
-    background-color: #0056b3;
-  }
-  
-  .puzzle:active {
-    background-color: #004080;
-  }
-
-  .devil-mode {
-    background-color: #007bff;
-  }
-
-  .devil-mode:hover {
-    background-color: #0056b3;
-  }
-  
-  .devil-mode:active {
-    background-color: #004080;
-  }
-  
-  .baby-mode {
-    background-color: #ff0000;
-  }
-
-  .baby-mode:hover {
-    background-color: #9e0e0e;
-  }
-  
-  .baby-mode:active {
-    background-color: #b34040;
-  }
-
+  .puzzle,
+  .devil-mode,
+  .baby-mode,
   .check {
-    background-color: #00ff0d;
-  }
-
-  .check:hover {
-    background-color: #15881b;
+    background-color: #007bff;
   }
   
-  .check:active {
-    background-color: #54cd5a;
+  .puzzle:hover,
+  .devil-mode:hover,
+  .baby-mode:hover,
+  .check:hover {
+    background-color: #0056b3;
   }
-
+  
+  .puzzle:active,
+  .devil-mode:active,
+  .baby-mode:active,
+  .check:active {
+    background-color: #004080;
+  }
+  
   .check-container {
     margin-top: 20px;
   }
@@ -145,17 +119,19 @@
     color: red;
   }
   
-  .styled-table td, .styled-table th {
+  .styled-table td,
+  .styled-table th {
     padding: 8px;
     border: 1px solid #ddd;
     text-align: center;
   }
   
-  .styled-table td.empty-column, .styled-table th.empty-column {
+  .styled-table td.empty-column,
+  .styled-table th.empty-column {
     border: none;
     padding: 0;
   }
-
+  
   .correct-cell {
     background-color: green; /* Change the background color to green for correct cells */
   }
@@ -164,5 +140,14 @@
     background-color: red; /* Change the background color to red for incorrect cells */
   }
   
+  .footer {
+    margin: 20px;
+  }
   
+  /* Media Query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .table-container {
+      overflow-x: auto;
+    }
+  }
   
