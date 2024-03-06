@@ -46,7 +46,7 @@ const Homepage = () => {
     // Shuffle the array of algorithm keys
     const shuffledKeys = shuffleArray(Object.keys(sortingAlgorithms));
     setAlgorithmOrder(shuffledKeys);
-  }, [unsortedArray]); // Update when unsortedArray changes
+  }, [unsortedArray, sortingAlgorithms]); // Update when unsortedArray changes
 
   const shuffleArray = (array) => {
     const shuffledArray = [...array];
