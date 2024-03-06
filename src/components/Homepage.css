@@ -44,4 +44,125 @@
     visibility: hidden;
     background-color: transparent; /* Maintain width while hidden */
   }
+
+  .algorithm-select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .algorithm-select:hover {
+    border-color: #999;
+  }
+  
+  .algorithm-select:focus {
+    border-color: #007bff;
+  }
+
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-row button {
+    margin: 0 10px;
+  }
+
+  .button-style {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .puzzle {
+    background-color: #007bff;
+  }
+  
+  .puzzle:hover {
+    background-color: #0056b3;
+  }
+  
+  .puzzle:active {
+    background-color: #004080;
+  }
+
+  .devil-mode {
+    background-color: #007bff;
+  }
+
+  .devil-mode:hover {
+    background-color: #0056b3;
+  }
+  
+  .devil-mode:active {
+    background-color: #004080;
+  }
+  
+  .baby-mode {
+    background-color: #ff0000;
+  }
+
+  .baby-mode:hover {
+    background-color: #9e0e0e;
+  }
+  
+  .baby-mode:active {
+    background-color: #b34040;
+  }
+
+  .check {
+    background-color: #00ff0d;
+  }
+
+  .check:hover {
+    background-color: #15881b;
+  }
+  
+  .check:active {
+    background-color: #54cd5a;
+  }
+
+  .check-container {
+    margin-top: 20px;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  
+  .styled-table td, .styled-table th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .styled-table td.empty-column, .styled-table th.empty-column {
+    border: none;
+    padding: 0;
+  }
+
+  .correct-cell {
+    background-color: green; /* Change the background color to green for correct cells */
+  }
+  
+  .incorrect-cell {
+    background-color: red; /* Change the background color to red for incorrect cells */
+  }
+  
+  
   

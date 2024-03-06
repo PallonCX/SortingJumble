@@ -13,8 +13,13 @@ export function generateUnsortedArray(n, dataType = 'string') {
       }
       return Array.from(unsortedArray); // Convert the set to an array before returning
     } else if (dataType === 'integer') {
-      return Array.from({ length: n }, () => Math.floor(Math.random() * 1001)); // Generate an array of random integers between 0 and 1000
+      let unsortedSet = new Set();
+      while (unsortedSet.size < n) {
+        unsortedSet.add(Math.floor(Math.random() * 1001)); // Generate a random integer between 0 and 1000 and add it to the set
+      }
+      return Array.from(unsortedSet); // Convert the set to an array before returning
     } else {
       throw new Error("Invalid data type. Choose either 'string' or 'integer'.");
     }
   }
+  
