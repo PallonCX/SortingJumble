@@ -26,6 +26,11 @@ export function quickSort(arr, randomPivot = false, stopProbability = 0.05) {
           [arr[left], arr[right]] = [arr[right], arr[left]];
           left++;
         }
+
+        // Introduce a random condition to stop sorting
+        if (Math.random() < stopProbability) {
+          return arr;
+        }
       }
   
       // Swap the pivot with the rightmost element of the left partition

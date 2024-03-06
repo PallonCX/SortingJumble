@@ -18,4 +18,3 @@ export function generateUnsortedArray(n, dataType = 'string') {
       throw new Error("Invalid data type. Choose either 'string' or 'integer'.");
     }
   }
-  

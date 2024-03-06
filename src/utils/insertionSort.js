@@ -9,6 +9,7 @@ export function insertionSort(arr, stopProbability = 0.05) {
   
         // Introduce a random condition to stop sorting at a random point
         if (Math.random() < stopProbability) { // Adjust the probability as needed
+          arr[j + 1] = key;
           return arr;
         }
       }
