@@ -17,12 +17,13 @@
   }
   
   .styled-table th,
-  .styled-table td {
+    .styled-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-  }
-  
+    width: 10%; /* Adjust the percentage as needed */
+    }
+    
   .styled-table th {
     background-color: #f2f2f2;
   }
@@ -146,8 +147,9 @@
   
   /* Media Query for smaller screens */
   @media only screen and (max-width: 768px) {
-    .table-container {
-      overflow-x: auto;
+    .styled-table th,
+    .styled-table td {
+      width: auto; /* Change to automatic width for smaller screens */
     }
   }
   
