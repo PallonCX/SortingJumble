@@ -211,10 +211,11 @@ const Homepage = () => {
       </div>
       <div className="check-container">
         {isCorrect === true ? <p className="correct">Well Done!</p> : isCorrect === false ? <p className="incorrect">Hmm something's wrong...</p> : null}
-        <button onClick={handleCheck} className="button-style check">
+        
+      </div>
+      <button onClick={handleCheck} className="button-style check">
         Check Answer
         </button>
-      </div>
       <footer className="footer">
         Made by <a href="https://github.com/PallonCX" target="_blank" rel="noopener noreferrer">Pallon</a>
         </footer>
